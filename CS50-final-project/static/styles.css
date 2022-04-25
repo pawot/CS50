@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    margin: 0;
+    color: #dfe8f0;
+    font-family: "Fredoka one";
+    background-color: #676150;
+}
+
+.header {
+    margin: auto;
+    padding: 3rem;
+    font-size: 3em;
+    text-align: center;
+    background-color: #4f4055;
+}
+
+#welcome {
+    margin: 3rem auto;
+    padding: 2rem;
+    width: 30%;
+    font-size: 1.2em;
+    background-color: #7a725a;
+    border-radius: 15px;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    column-gap: 30px;
+    width: 50%;
+}
+
+/* Style <select> elments. https://www.geeksforgeeks.org/how-to-style-a-dropdown-using-css/ */
+
+select {
+    padding-left: 4px;
+    font-family: "Fredoka one";
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.select-container {
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 15em;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.select-container::after {
+    content: '\25BC';
+    position: absolute;
+    right: 0;
+    padding: 0 1em;
+    background: #34495e;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+.select-container:hover::after {
+    color: #F39C12;
+}
+
+button {
+    padding: 1em;
+    font-family: "Fredoka one";
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #676150;
+    box-shadow: 5px 5px 20px #e6e6e6, -5px -5px 20px #e6e6e6;
+    color: #e6e6e6;
+}
+
+/* Style result page */
+
+/* Hide helper paras */
+#hide-one, #hide-two, #hide-three {
+    display: none;
+}
+
+.result-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: #4f4055;
+}
+
+#result-header-text {
+    font-size: 2.5em;
+    padding: 0;
+}
+
+#result-btn {
+    text-align: end;
+    margin: 1em;
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+.result-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 5em;
+    gap: 20vw;
+}
+
+#second {
+    flex-direction: row-reverse;
+    background-color: #7a725a;
+}
+
+@media (max-width: 768px) {
+
+    #welcome {
+        width: auto;
+        border-radius: 0;
+        margin-top: 0;
+    }
+    
+    form {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .select-container {
+        padding-bottom: 1em;
+    }
+
+    #index-btn {
+        margin-bottom: 3em;
+    }
+
+    .result-header {
+        width: 100%;
+    }
+
+    .result-video {
+        display: block;
+        padding: 2px;
+    }
+}

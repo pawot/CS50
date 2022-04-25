@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>YouTube hitparade results</title>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">    
+    </head>
+    <body>
+        <div class="result-header">
+            <h1 class="header" id="result-header-text">{{ genre }} - Year {{ year }}</h1>
+            <form id="result-btn" action="/" method="get">
+                <button type="submit">Home</button>
+            </form>
+        </div>
+        <div id="winner" class="result-video">
+            <div class="result-video-name">
+                <h2>Winner</h2>
+                <p class="name">{{ output[1][0] }}</p>
+                <p id="hide-one">https://www.youtube.com/embed/{{ output[0][0] }}</p>
+            </div>
+            <iframe id="video-winner" width="420" height="315" src="" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </div>
+            <div id="second" class="result-video">
+                <div class="result-video-name">
+                    <h2>Second</h2>
+                    <p class="name">{{ output[1][1] }}</p>
+                    <p id="hide-two">https://www.youtube.com/embed/{{ output[0][1] }}</p>
+                </div>
+                <iframe id="video-second" width="420" height="315" src="" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div id="third" class="result-video">
+                <div class="result-video-name">
+                    <h2>Third</h2>
+                    <p class="name">{{ output[1][2] }}</p>
+                    <p id="hide-three">https://www.youtube.com/embed/{{ output[0][2] }}</p>
+                </div>
+            <iframe id="video-third" width="420" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </body>
+    <script>
+        // Append src attribute to iframe element
+        var winner = document.getElementById("hide-one");
+        document.getElementById("video-winner").src=winner.innerHTML;
+
+        var second = document.getElementById("hide-two");
+        document.getElementById("video-second").src=second.innerHTML;
+
+        var third = document.getElementById("hide-three");
+        document.getElementById("video-third").src=third.innerHTML;
+    </script>
+</html>

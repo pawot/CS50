@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Youtube hitparade</title>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">    
+    </head>
+
+    <body>
+        <h1 class="header">YouTube hitparade</h1>
+        <p id="welcome">Welcome to YouTube hitparade app, where you can watch the 3 most viewed YouTube music videos in your favourite genre, that were published in a particular year.</p>
+        <form action="/results" method="post">
+            <div class="select-container">
+                <select name="years" class="select" required>
+                    <option value="" selected disabled>Year</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            <div class="select-container">
+                <select name="genres" class="select" required>
+                    <option value="" selected disabled>Genre</option>
+                    <option value="/m/05fw6t">Children's music</option>
+                    <option value="/m/02mscn">Christian music</option>
+                    <option value="/m/0ggq0m">Classical music</option>
+                    <option value="/m/01lyv">Country</option>
+                    <option value="/m/02lkt">Electronic music</option>
+                    <option value="/m/0glt670">Hip hop music</option>
+                    <option value="/m/05rwpb">Independent music</option>
+                    <option value="/m/03_d0">Jazz</option>
+                    <option value="/m/028sqc">Music of Asia</option>
+                    <option value="/m/0g293">Music of Latin America</option>
+                    <option value="/m/064t9">Pop music</option>
+                    <option value="/m/06cqb">Reggae</option>
+                    <option value="/m/06j6l">Rhythm and blues</option>
+                    <option value="/m/06by7">Rock music</option>
+                    <option value="/m/0gywn">Soul music</option>
+                </select>
+            </div>
+            <button id="index-btn" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
