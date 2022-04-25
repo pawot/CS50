@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spartan:wght@600&display=swap');
+
+.anchors {
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.anchors a {
+    margin-right: 20px;
+}
+
+.google-header {
+    position: relative;
+    font-family: 'Spartan', sans-serif;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.google-header p {
+    position: absolute;
+    right: 38vw;
+    top: 10vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: rgba(50, 109, 235, 0.842);
+}
+
+.g, .g2 {
+    color: rgba(50, 109, 235, 0.842);
+
+}
+
+.o, .e {
+    color: rgba(230, 50, 50, 0.801);
+}
+
+.o2 {
+    color: rgba(255, 174, 0, 0.808);
+}
+
+.l {
+    color: rgba(53, 148, 15, 0.842);
+}
+
+.e {
+    transform: rotate(-0.06turn);
+}
+
+.google-search {
+    margin: 2em auto;
+    text-align: center;
+}
+
+form {
+    margin: 15px auto;
+    max-width: 36em;
+}
+
+.search-area {
+    padding: 8px 0;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+}
+
+.search-area:hover {
+    box-shadow: 1px 1px 5px #9c9c9c50, -1px -1px 5px #9c9c9c50;
+}
+
+.text {
+    font-size: 105%;
+    min-width: 85%;
+    border: hidden;
+    vertical-align: super;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submits {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.submits input {
+    font-size: 15px;
+    height: 35px;
+    width: 140px;
+    cursor: pointer;
+    color: #474444;
+    border: hidden;
+    background-color: rgba(128, 128, 128, 0.055);
+    border-radius: 4px;
+}
+
+.submits input:hover {
+    box-shadow: 0.2px 0.2px 1px #9c9c9c;
+    border: 1.5px solid rgba(77, 75, 75, 0.192);
+}
+
+/* IMAGE SEARCH */
+
+#text-images {
+    min-width: 70%;
+
+}
+
+.images-icon-camera {
+    margin-right: 8px;
+}
+
+.images-icon-blue {
+    margin-left: 15px;
+}
+
+#images-submit {
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+/* ADVANCED SEARCH */
+
+.advanced-body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: smaller;
+    color: #535252;
+}
+
+.advanced-body h1 {
+    margin: 0 20px;
+    color: rgb(204, 26, 26);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.advanced-body h2 {
+    font-size: 17px;
+    font-weight: normal;
+}
+.line {
+    margin: 30px 0;
+    height: 1px;
+    background-color: rgba(179, 177, 177, 0.712);
+}
+
+.google-advanced-search {
+    margin: 0;
+    max-width: 100vw;
+}
+
+.google-advanced-search p, .advanced-input, h2 {
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: left;
+}
+
+.google-advanced-search p, h2 {
+    margin: 0 20px;
+    width: 180px;
+}
+
+.advanced-input {
+    width: 40vw;
+    line-height: 25px;
+    border: 1px solid rgba(179, 177, 177, 0.712);
+}
+
+.instructions-header {
+    padding-left: 40vw;
+}
+
+.google-advanced-search .instructions {
+    width: 350px;
+    font-size: 10px;
+}
+
+.advanced-btn {
+    max-width: 58em;
+}
+
+.advanced-btn {
+    width: 60vw;
+    text-align: right;
+}
+
+.advanced-btn button {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: smaller;
+    color: white;
+    background-color: rgb(62, 138, 224);
+    border: hidden;
+}
+
+.advanced-btn button:hover {
+    background-color: rgb(48, 125, 214);
+}
